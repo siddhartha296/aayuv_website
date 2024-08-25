@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  background-color: #1a1a1a; /* Dark background for the header */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and navigation buttons */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center; /* Center the navigation buttons */
+}
+
+.logo img {
+  height: 40px; /* Adjust logo size */
+  margin-right: 50px; /* Space between logo and navigation buttons */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px; /* Space between navigation buttons */
+  margin-right:30px;
+}
+
+.nav-button, #logout {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  font-size: 1.2em;
+}
+
+.nav-button:hover, #logout:hover {
+  background-color: #1A2A3F;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  transform: translateY(-2px);
+}
+
+.nav-button:focus, #logout:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  border: 10px solid #3A5F8D;
+}
+
+
+#slider-container {
+  width: 80%; /* Adjust this value to change the overall size of the slider container */
+  max-width: 1200px; /* Optional: set a maximum width */
+  margin: 5px auto; /* Center the slider container and add some margin */
+}
+
+#slider {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Maintains 16:9 aspect ratio */
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  object-fit: cover;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+#services {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+}
+
+.service-box {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.service-box:hover {
+  background-color: #1A2A3F;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  transform: translateY(-2px);
+}
+
+.service-box img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.service-box:hover img {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.service-box h3 {
+  margin: 10px 0;
+  font-size: 1.4em;
+}
+
+.service-box p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+#about {
+  padding: 40px 20px;
+  text-align: left; /* Align text to the left */
+  background-color: #1a1a1a; /* Slightly lighter than the main background for contrast */
+  color: #e0e0e0; /* Light gray text for readability */
+  border-left: 5px solid #4CAF50; /* Green border to align with health care theme */
+  margin: 20px; /* Add some margin for spacing */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Subtle shadow to lift the section off the background */
+}
+
+#about h2 {
+  color: #ffffff; /* White heading for contrast against the background */
+  margin-bottom: 20px;
+}
+
+#about p {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #1a1a1a;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #1D2A38;
+  color: #FFFFFF;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  border: 1px solid #3A5F8D;
+}

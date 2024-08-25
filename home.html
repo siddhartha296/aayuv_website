@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayuv - Health Care Monitoring</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="aayuv_logo.png" alt="Aayuv Logo">
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="navigateTo('home.html')">Home</button>
+                <button class="nav-button" onclick="navigateTo('health-monitoring.html')">Health Monitoring</button>
+                <button class="nav-button" onclick="navigateTo('controlling.html')">Controlling</button>
+                <button class="nav-button" onclick="navigateTo('emergency.html')">Emergency</button>
+                <button class="nav-button" onclick="navigateTo('health-care-remedies.html')">Health Care Remedies</button>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section id="slider-container">
+        <div id="slider">
+            <!-- Slider content will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="service-box" onclick="navigateTo('health-monitoring.html')">
+            <img src="s1.png" alt="Health Monitoring">
+            <h3>Health Monitoring</h3>
+            <p>Real-time health tracking</p>
+            <p>Personalized health insights</p>
+        </div>
+        <div class="service-box" onclick="navigateTo('controlling.html')">
+            <img src="s2.png" alt="Controlling">
+            <h3>Controlling</h3>
+            <p>Manage your health devices</p>
+            <p>Customize health parameters</p>
+        </div>
+        <div class="service-box" onclick="navigateTo('emergency.html')">
+            <img src="s3.png" alt="Emergency">
+            <h3>Emergency</h3>
+            <p>24/7 emergency support</p>
+            <p>Quick response system</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Aayuv is a pioneering health care monitoring company, rooted in the EEE department of VR Siddhartha Engineering College. 
+            Our journey began with a mission to revolutionize the way health is monitored and managed. With cutting-edge technology 
+            and a passionate team, we strive to provide innovative solutions that cater to the evolving needs of our customers.
+            <br><br>
+            At Aayuv, we believe that health care should be proactive, not reactive. Our comprehensive monitoring systems 
+            are designed to give you real-time insights into your health, enabling you to make informed decisions and take 
+            timely actions. From tracking vital signs to managing emergency responses, our solutions are tailored to ensure 
+            that you are always in control of your health.
+            <br><br>
+            As we continue to grow, our commitment to excellence remains unwavering. We are dedicated to improving 
+            lives through technology, making health care more accessible, efficient, and personalized. Join us on our 
+            journey as we set new standards in health care monitoring.
+        </p>
+    </section>
+    
+
+    <footer>
+        <button id="logout" onclick="logout()">Logout</button>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="homepage.js"></script>
+</body>
+</html>

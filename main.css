@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #000000;
+  color: #fff;
+  margin: 0;
+}
+
+.login-section {
+  position: relative;
+  width: 40%;
+  background-color: #0D1B2A; /* Dark Blue */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-box {
+  position: relative;
+  background-color: #1D2A38; /* Darker Blue */
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.3); /* Glow effect */
+  border-radius: 10px;
+  width: 80%;
+  color: #FFFFFF; /* Text color */
+  transform: translateY(-10px); /* Slightly elevated */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-20px); /* Lift higher on hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 255, 255, 0.5); /* Enhanced glow effect on hover */
+}
+
+.welcome-section {
+  width: 60%;
+  background-color: #302f2f;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #0583D2;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #f4f4f9;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #f4f4f9;
+}
+
+input, button {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Light border for contrast */
+  background-color: #1D2A38; /* Darker Blue background for input and button */
+  color: #FFFFFF; /* White text for contrast */
+  display: block;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for effects */
+}
+
+input:focus, button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Soft white glow on focus */
+  border: 1px solid #3A5F8D; /* Highlight border on focus */
+}
+
+button {
+  background-color: #2c445f; /* Darker Blue background for button */
+  color: #FFFFFF; /* White text */
+  border: none; /* Remove border */
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Stronger glow on hover */
+  background-color: #1A2A3F; /* Even Darker Blue on hover */
+  transform: translateY(-2px); /* Lift button slightly on hover */
+}
+
+#google-sign-in {
+  background-color: #db4437; /* Google Red */
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+#forgot-password {
+    background-color: #5bde60; /* Green background */
+    color: #FFFFFF; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #forgot-password:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift button slightly on hover */
+  }
+  
